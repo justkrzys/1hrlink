@@ -1,3 +1,4 @@
+let dotenv = require('dotenv').config();
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
@@ -5,7 +6,7 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 let cors = require("cors");
 
-let port = process.env.PORT || 5000;
+let port = process.env.PORT;
 
 let indexRouter = require('./routes/index');
 
@@ -40,6 +41,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(port, () => console.log("Backend server live on " + port));
+app.listen(port, () => console.log("Backend server live on " + process.env.PORT));
 
 module.exports = app;
