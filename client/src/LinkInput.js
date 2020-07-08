@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 class LinkInput extends React.Component{
     state = {
@@ -8,6 +9,15 @@ class LinkInput extends React.Component{
     onSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
+        axios
+            .post('localhost:5000', this.state)
+            .then(response =>{
+            console.log(response)
+        })
+            .catch(error => {
+                console.log(error)
+            })
+
         this.setState({
             link:''
         })
