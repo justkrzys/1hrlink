@@ -7,4 +7,10 @@ router.get('/', (req, res) => {
   res.send({message: "It does work!"});
 });
 
+router.post('/', (req, res) => {
+  //Get POST request from client
+  let response = "Received POST from client! Link: " + req.body.link;
+  res.send({message: response});
+});
+
 module.exports = router;

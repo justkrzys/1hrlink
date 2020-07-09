@@ -4,24 +4,25 @@ import axios from "axios";
 class LinkInput extends React.Component{
     state = {
         link: ''
-    }
+    };
 
     onSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        //console.log(this.state);
         axios
-            .post('localhost:5000', this.state)
+            .post('http://localhost:5000/', this.state)
             .then(response =>{
             console.log(response)
         })
             .catch(error => {
                 console.log(error)
-            })
+            });
 
         this.setState({
             link:''
-        })
-    }
+        });
+
+    };
 
     render(){
         return(
@@ -32,7 +33,6 @@ class LinkInput extends React.Component{
                 />
                 <button onClick={e => this.onSubmit(e)}>Submit</button>
             </form>
-
         );
     }
 

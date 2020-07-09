@@ -13,10 +13,9 @@ function App() {
   }).then(res => {
     console.log(res.data.message);
       }
-  )
+  );
 
   return (
-
     <div className="App">
       <LinkInput/>
     </div>
