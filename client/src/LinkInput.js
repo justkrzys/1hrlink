@@ -12,7 +12,7 @@ class LinkInput extends React.Component{
         axios
             .post('http://localhost:5000/', this.state)
             .then(response =>{
-            console.log(response)
+            //console.log(response)
         })
             .catch(error => {
                 console.log(error)
