@@ -48,7 +48,7 @@ router.post('/', (req, res) => {
   let linkHash = MD5.hex_hmac(link, salt);
   let shortLink = "1hrlink.com/" + linkHash.substring(1, 8);
   //time before link expires
-  let expireDuration = .5;
+  let expireDuration = req.body.time;
   let expireTime = new Date(Date.now() + expireDuration*60000);
 
   let newLink = new LinkModel({longURL: link, shortURL: shortLink, expireAt: expireTime});
