@@ -15,6 +15,7 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
 
 **Front End:**
 - [ ] Time Input Drop Down
+- [ ] Regular expression matching for links
 - [ ] CAPTCHA before submission
 - [ ] Recently shortened links
 - [ ] Optional custom short link
@@ -36,9 +37,18 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
     
 ---
 
-**Completed:**
+### **Completed:**
+**Full Stack:**
 - [x] Connect front-end to back-end
 - [x] Hide credentials in source code via process variables
-- [x] Create preliminary database schema
-- [x] Fix package security vulnerabilities
 - [x] Get documents to expire after user specified length of time
+- [x] Fix package security vulnerabilities
+
+**Front End:**
+- [x] Preliminary user input form working
+- [x] Form data being sent to server successfully
+
+**Back End:**
+- [x] Create preliminary database schema
+- [x] Respond to client successfully
+- [x] Hash URL and respond with shortened link
