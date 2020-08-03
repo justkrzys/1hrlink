@@ -17,6 +17,7 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
 - [ ] Recently shortened links
 - [ ] Optional custom short link
 - [ ] Future front end extras
+    - [ ] Website styling
     - [ ] Copyright
     - [ ] About 1hrlink
     - [ ] About “Our Team”
@@ -28,4 +29,14 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
 - [ ] Proper redirection from database
 - [ ] Get a public API setup
 - [ ] Future
+    - [ ] Update database schema
     - [ ] Statistics on links (tracking page clicks, etc.)
+    
+---
+
+**Completed:**
+- [x] Connect front-end to back-end
+- [x] Hide credentials in source code via process variables
+- [x] Create preliminary database schema
+- [x] Fix package security vulnerabilities
+- [x] Get documents to expire after user specified length of time
