@@ -3,6 +3,8 @@ A quick, temporary link shortening service.
 
 Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
 
+[![Known Vulnerabilities](https://snyk.io/test/github/justkrzys/1hrlink/badge.svg?targetFile=server/package.json)](https://snyk.io/test/github/justkrzys/1hrlink?targetFile=server/package.json)
+
 ---
 
 ### To Do (Subject to Change):
