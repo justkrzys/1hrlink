@@ -3,13 +3,15 @@ A quick, temporary link shortening service.
 
 Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
 
+---
+
 ### To Do (Subject to Change):
-Full Stack:
+**Full Stack:**
 - [ ] Adjustable link length
 - [ ] Future
   - [ ] Social media share integration (Facebook, Twitter, etc.)
 
-Front End:
+**Front End:**
 - [ ] Time Input Drop Down
 - [ ] CAPTCHA before submission
 - [ ] Recently shortened links
@@ -21,7 +23,7 @@ Front End:
     - [ ] Contact Us
     - [ ] Logo?
     
-Back End:
+**Back End:**
 - [ ] 404 and Error pages fully implemented
 - [ ] Proper redirection from database
 - [ ] Get a public API setup
