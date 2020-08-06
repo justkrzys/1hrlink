@@ -29,7 +29,8 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
     
 **Back End:**
 - [ ] 404 and Error pages fully implemented
-- [ ] Proper redirection from database
+    - [x] 404 Page redirection
+- [ ] Input sanitization before inserting into database
 - [ ] Get a public API setup
 - [ ] Future
     - [ ] Update database schema
@@ -47,8 +48,10 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
 **Front End:**
 - [x] Preliminary user input form working
 - [x] Form data being sent to server successfully
+- [x] Redirection to original URL
 
 **Back End:**
 - [x] Create preliminary database schema
 - [x] Respond to client successfully
 - [x] Hash URL and respond with shortened link
+- [x] Proper redirection from database
