@@ -41,16 +41,37 @@ router.get('/', (req, res) => {
   res.send({message: "It does work!"});
 });
 
+router.get('/:shortLink', (req, res) =>{
+  //shortLink here is 1hrlink.com/shortLink where shortLink is the hash
+  let url = req.params.shortLink;
+
+  LinkModel.findOne({shortURL: url}, (err, doc) => {
+    if(err){
+      console.log(err);
+    }
+    if(!doc){
+      res.redirect("http://localhost:3000/404");
+    }
+    else{
+      res.redirect("http://" + doc.longURL);
+    }
+  });
+});
+
 router.post('/', (req, res) => {
   //Get POST request from client
   let link = req.body.link;
-  let salt = RandomStr.generate(7);
+  //option for specifying shortened url length, here 7
+  //let urlLength = req.body.length;
+  let urlLength = 7;
+  let salt = RandomStr.generate(urlLength);
   let linkHash = MD5.hex_hmac(link, salt);
-  let shortLink = "1hrlink.com/" + linkHash.substring(1, 8);
+  let shortLink = linkHash.substring(1, 8);
   //time before link expires
   let expireDuration = req.body.time;
   let expireTime = new Date(Date.now() + expireDuration*60000);
 
+  //create new MongoDB document and save it to the database
   let newLink = new LinkModel({longURL: link, shortURL: shortLink, expireAt: expireTime});
   newLink.save((err) => {
     if (err) return console.log(err);
