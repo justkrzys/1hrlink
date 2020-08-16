@@ -28,6 +28,7 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
     - [ ] Logo?
     
 **Back End:**
+- [ ] Implement proper subdomain for back end API calls
 - [ ] 404 and Error pages fully implemented
     - [x] 404 Page redirection
 - [ ] Input sanitization before inserting into database
