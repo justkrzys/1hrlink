@@ -15,6 +15,7 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
 
 **Front End:**
 - [ ] Time Input Drop Down
+- [ ] Copy Link Button
 - [ ] Regular expression matching for links
 - [ ] CAPTCHA before submission
 - [ ] Recently shortened links
