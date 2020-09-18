@@ -29,6 +29,8 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
     - [ ] Logo?
     
 **Back End:**
+- [x] Proper redirection from database
+    - [ ] Insert reserved subpage URLs into database
 - [ ] Implement proper subdomain for back end API calls
 - [ ] 404 and Error pages fully implemented
     - [x] 404 Page redirection
@@ -56,4 +58,3 @@ Domain will be hosted @ [1hrlink.com](https://1hrlink.com).
 - [x] Create preliminary database schema
 - [x] Respond to client successfully
 - [x] Hash URL and respond with shortened link
-- [x] Proper redirection from database
