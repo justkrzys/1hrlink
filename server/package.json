@@ -15,7 +15,7 @@
     "jshashes": "^1.0.8",
     "mongoose": "^5.10.0",
     "morgan": "~1.10.0",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "randomstring": "^1.1.5"
   },
   "devDependencies": {
